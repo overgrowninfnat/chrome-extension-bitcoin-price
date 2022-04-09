@@ -15,16 +15,6 @@
       body {
         width: 250px;
         height: 200px;
-        background: white;
-      }
-      .navbar {
-        width: 100%;
-        height: auto;
-        padding: 10px;
-        background: blueviolet;
-        display: flex;
-        justify-content: center;
-        align-items: center;
       }
       .title {
         color: white;
@@ -34,34 +24,37 @@
       .main {
         width: 100%;
         height: 100%;
+        padding: 25px;
+        background: blueviolet;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
       .card {
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 30px;
-        gap: 10px;
+        gap: 5px;
       }
       .image {
-        width: 100px;
-        height: 100px;
+        width: 60px;
+        height: 60px;
       }
       .price {
-        font-size: 35px;
+        margin-top: 20px;
+        font-size: 40px;
         font-weight: bolder;
+        color: white;
       }
     </style>
   </head>
   <body>
-    <nav class="navbar">
-      <p class="title">Bitcoin Price</p>
-    </nav>
     <div class="main">
       <div class="card">
+        <p class="title">Bitcoin Price</p>
         <img id="bitcoin-image" class="image" />
-        <p id="price" class="price"></p>
       </div>
+      <p id="price" class="price"></p>
     </div>
     <script src="popup.js"></script>
   </body>
